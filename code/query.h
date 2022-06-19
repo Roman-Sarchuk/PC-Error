@@ -34,13 +34,13 @@ short ProtcInput(short max)
 		cin.ignore(32767, '\n');
 		if (vers >= 1 && vers <= max)
 			break;
-		cout << "! ×èñëî ìàº áóòè â³ä 1 äî " << max << " !" << endl;
+		cout << "! Ã—Ã¨Ã±Ã«Ã® Ã¬Ã Âº Ã¡Ã³Ã²Ã¨ Ã¢Â³Ã¤ 1 Ã¤Ã® " << max << " !" << endl;
 	}
 	cout << endl;
 	return vers;
 }
 
-short Ask(QstList qst)	// Äîâãå çàïèòàííÿ
+short Ask(QstList qst)	// Ã„Ã®Ã¢Ã£Ã¥ Ã§Ã Ã¯Ã¨Ã²Ã Ã­Ã­Ã¿
 {
 	short vcount = 0;
 	cout << qst.Questions << endl;
@@ -53,9 +53,9 @@ short Ask(QstList qst)	// Äîâãå çàïèòàííÿ
 	return ProtcInput(vcount);
 }
 
-short Ask(string qst)	// Êîğîòêå çàïèòàííÿ
+short Ask(string qst)	// ÃŠÃ®Ã°Ã®Ã²ÃªÃ¥ Ã§Ã Ã¯Ã¨Ã²Ã Ã­Ã­Ã¿
 {
 	cout << qst << endl;
-	cout << "1) Òàê" << endl << "2) Í³" << endl;
+	cout << "1) Ã’Ã Ãª" << endl << "2) ÃÂ³" << endl;
 	return ProtcInput(2);
 }
